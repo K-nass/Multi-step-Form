@@ -8,7 +8,7 @@
     border-bottom: 1px solid var(--text-color);
 }
 
-.review-container div div{
+.review-container div div {
     text-align: center;
     text-wrap: nowrap;
     padding: 0.3rem 0.5em;
@@ -24,4 +24,12 @@
 
 .review-container div div p {
     color: black;
+}
+
+@media(max-width:513px) {
+    .review-container {
+        flex-direction: column;
+        gap: 0;
+        width: 80%;
+    }
 }

@@ -14,10 +14,10 @@
 
 body {
   background-color: var(--primary);
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2em;
 }
 
 main {
@@ -97,4 +97,49 @@ form button {
 form:last-child {
   padding-bottom: 2em;
   border-bottom: 1px solid var(--text-color);
+}
+
+@media(max-width:456px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    text-align: left;
+  }
+  main {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  form:last-child {
+    padding-bottom: 0.3em;
+  }
+
+  #nextBtn {
+    bottom: -2rem;
+  }
+
+}
+
+@media(max-width:576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+
+  main {
+    max-width: 90%;
+    padding: 3em 1em;
+  }
+
+  form:last-child {
+    padding-bottom: 0.5em;
+  }
+
+  #nextBtn {
+    bottom: -3rem;
+  }
 }

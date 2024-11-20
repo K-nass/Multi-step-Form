@@ -42,7 +42,7 @@ input[type="radio"]:checked+.custom-radio::before{
     display: flex;
     gap: 0.5rem;
     padding: 1em;
-    padding-right: 4em;
+    width: 200px;
     margin-top: 0.5rem;
     border: 1px solid var(--text-color);
     border-radius: 5px;
@@ -51,4 +51,11 @@ input[type="radio"]:checked+.custom-radio::before{
 
 .selected {
     border: 1px solid var(--secondary);
+}
+
+
+@media(max-width:513px) {
+    #form-three {
+        gap: 0;
+    }
 }
