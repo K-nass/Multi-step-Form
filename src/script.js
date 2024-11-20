@@ -37,3 +37,4 @@ displayForms(1);
 //responsive ?
 //final Step done
 //focus on selected inputs when clicked done
+//fixing github error
