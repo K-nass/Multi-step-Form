@@ -1,0 +1,27 @@
+.review-container {
+    display: flex;
+    gap: 1rem;
+}
+
+#form-review {
+    position: relative;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.review-container div div{
+    text-align: center;
+    text-wrap: nowrap;
+    padding: 0.3rem 0.5em;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-color: var(--review-field);
+    overflow: auto;
+}
+
+.review-container div div h5 {
+    color: var(--text-color);
+}
+
+.review-container div div p {
+    color: black;
+}

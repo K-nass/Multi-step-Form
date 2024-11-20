@@ -1,0 +1,54 @@
+#form-three {
+    display: flex;
+    gap: 2rem;
+}
+
+#form-three label {
+    cursor: pointer;
+}
+
+#form-three input {
+    display: none;
+}
+
+.custom-radio {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    border-radius: 1px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+input[type="radio"]:checked+.custom-radio::before{
+    content: "✓";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: var(--secondary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+.input-container {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1em;
+    padding-right: 4em;
+    margin-top: 0.5rem;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selected {
+    border: 1px solid var(--secondary);
+}

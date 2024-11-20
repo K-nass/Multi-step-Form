@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #F3F3E3;
+  --secondary: #FE6A4C;
+  --progress-indictor: #C1C1C1;
+  --text-color: #C1C1C1;
+  --review-field: #F2F3F5;
+}
+
+body {
+  background-color: var(--primary);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+  border-radius: 10px;
+  padding: 4em 2em;
+  width: 500px;
+}
+
+main h4 {
+  margin-bottom: 0.5rem;
+}
+
+main p {
+  color: var(--text-color);
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+header {
+  margin: 3rem;
+  text-align: center;
+}
+
+header p {
+  margin-top: 0.5rem;
+}
+
+form {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+form input {
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  padding: 0.5em;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+form input:focus,
+form button {
+  outline: 1px solid var(--secondary);
+}
+
+#nextBtn,
+#backBtn {
+  cursor: pointer;
+  position: absolute;
+  bottom: -3rem;
+  right: 0;
+  padding: 0.5em 0.8em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--secondary);
+  color: white;
+}
+
+#backBtn {
+  right: unset;
+  left: 0;
+  background-color: transparent;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+form:last-child {
+  padding-bottom: 2em;
+  border-bottom: 1px solid var(--text-color);
+}

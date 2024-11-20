@@ -1,0 +1,27 @@
+#form-two {
+    display: flex;
+    gap: 2rem;
+}
+
+#form-two img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+#form-two input {
+    display: none;
+}
+
+#form-two label {
+    display: flex;
+    padding: 1em;
+    padding-right: 6em;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+#form-two label.selected {
+    border: 1px solid var(--secondary);
+}
