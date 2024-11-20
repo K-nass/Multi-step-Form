@@ -1,8 +1,8 @@
 export default function progressIndicator() {
     
     return `
-        <span class="active">1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>`
+        <span class="active state">1</span>
+        <span class="state">2</span>
+        <span class="state">3</span>
+        <span class="state">4</span>`
 }

@@ -18,7 +18,7 @@
     left: 5%;
 }
 
-span {
+.state {
     width: 30px;
     height: 30px;
     background-color: var(--progress-indictor);
@@ -27,7 +27,7 @@ span {
     padding: 5px;
 }
 
-span::after {
+.state::after {
     content: "";
     position: absolute;
     border-top: 3px solid var(--progress-indictor);

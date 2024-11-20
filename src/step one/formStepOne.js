@@ -7,7 +7,6 @@ export default function formStepOne() {
     setTimeout(() => {
         const form = document.getElementById('form-one');
         if (form) {
-
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
                 const stepOneValues = {
