@@ -7,13 +7,16 @@ import progressIndicator from "./progress indicator/progressIndicator.js";
 
 
 
-
 const progressContainer = document.getElementById('progressContainer')
 progressContainer.innerHTML = progressIndicator()
-
-
-
 const main = document.querySelector('main');
+
+function isFinalStep() {
+    progressContainer.style.display = 'none'
+}
+
+
+
 export function displayForms(currentForm) {
     switch (currentForm) {
         case 1: main.innerHTML = formStepOne();
@@ -25,6 +28,7 @@ export function displayForms(currentForm) {
         case 4: main.innerHTML = reviewStep();
             break;
         case 5: main.innerHTML = finalStep();
+        isFinalStep()
             break;
         default: main.innerHTML = formStepOne();
             break;

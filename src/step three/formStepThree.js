@@ -36,30 +36,30 @@ export default function formStepThree() {
     <p>please tell us which frontend challenges would you like to participate in</p></p>
     <form id="form-three">
     <div>
-        <div class = 'input-container'>
+        <div class='input-container'>
             <input type="radio" id="fundamentals" name="preference" value='HTML/CSS/JS' autofocus required>
             <span class="custom-radio"></span>
             <label for="fundamentals">HTML/CSS/JS</label>
         </div>
-            <div class = 'input-container'>
-                <input type="radio" id="framework-react" name="preference" value = 'React.Js' required>
-                <span class="custom-radio"></span>
-                <label for="framework-react">React.Js</label>
-            </div>
+        <div class='input-container'>
+            <input type="radio" id="framework-react" name="preference" value = 'React.Js' required>
+            <span class="custom-radio"></span>
+            <label for="framework-react">React.Js</label>
+        </div>
     </div>
     <div>
-        <div class = 'input-container'>
+        <div class='input-container'>
             <input type="radio" id="framework-angular" name="preference" value='Angular.Js' required>
             <span class="custom-radio"></span>
             <label for="framework-angular">Angular.Js</label>
         </div>
-        <div class = 'input-container'>
+        <div class='input-container'>
                 <input type="radio" id="framework-vue" name="preference" required value = 'Vue.Js' required>
                 <span class="custom-radio"></span>
                 <label for="framework-vue">Vue.Js</label>
         </div>
     </div>
-    <button class = 'disabled' type='submit' id='nextBtn'>Next Step</button>
+    <button type='submit' id='nextBtn'>Next Step</button>
     <button id='backBtn'>Go Back</button>
     </form>`
 }

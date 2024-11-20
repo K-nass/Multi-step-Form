@@ -1,35 +1,32 @@
 .review-container {
     display: flex;
-    gap: 1rem;
+    gap: 10px;
 }
 
 #form-review {
     position: relative;
     border-bottom: 1px solid var(--text-color);
 }
+.review-unit h5 {
+    margin: 10px 0;
+}
 
-.review-container div div {
+.review-unit {
     text-align: center;
     text-wrap: nowrap;
-    padding: 0.3rem 0.5em;
-    margin-bottom: 1rem;
     border-radius: 10px;
     background-color: var(--review-field);
     overflow: auto;
+    width: 100%;
+    padding: 0 0.5em;
+    margin: 10px 0;
 }
 
-.review-container div div h5 {
-    color: var(--text-color);
-}
-
-.review-container div div p {
-    color: black;
-}
-
-@media(max-width:513px) {
+@media(max-width:576px) {
     .review-container {
         flex-direction: column;
-        gap: 0;
-        width: 80%;
+    }
+    #form-review {
+        border: unset;
     }
 }

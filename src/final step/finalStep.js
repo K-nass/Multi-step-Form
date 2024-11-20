@@ -1,5 +1,4 @@
 export default function finalStep() {
-
     return `
     <form id='final-form'>
         <img src="images/congratulation.svg" alt="" width="100px" height="100px">

@@ -29,13 +29,3 @@
     border: 1px solid var(--secondary);
 }
 
-
-@media(max-width:456px) {
-    #form-two {
-        gap: 0;
-    }
-
-    #form-two div {
-        width: 70%;
-    }
-}

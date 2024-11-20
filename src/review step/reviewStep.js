@@ -29,31 +29,31 @@ export default function reviewStep() {
     <form id='form-review'>
         <div class = 'review-container'>
             <div>
-                <div>
+                <div class="review-unit">
                     <h5>Full Name</h5>
                     <p id='fullNameText'>${userDetails.fullName}</p>
                 </div>
-                <div>
+                <div class="review-unit">
                     <h5>portfolio/Github Link</h5>
                     <p>${userDetails.portfolio}</p>
                 </div>
             </div>
             <div>
-                <div>
+                <div class="review-unit">
                     <h5>Email Address</h5>
                     <p>${userDetails.emailAddress}</p>
                 </div>
-                <div>
+                <div class="review-unit">
                     <h5>Skill Level</h5>
                     <p>${skillLevel.value}</p>
                 </div>
             </div>
             <div>
-                <div>
+                <div class="review-unit">
                     <h5>Phone Number</h5>
                     <p>${userDetails.phoneNumber}</p>
                 </div>
-                <div>
+                <div class="review-unit">
                     <h5>Challenge Preference</h5>
                     <p>${preference.value}</p>
                 </div>

@@ -17,18 +17,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2em;
 }
 
 #appContainer {
   background-color: white;
   border-radius: 10px;
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 main {
-  border-radius: 10px;
-  padding: 1.5em 2em 3em;
-  width: 500px;
+  padding: 1em 1em 2em;
 }
 
 main h4 {
@@ -53,7 +53,7 @@ header p {
 
 form {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   position: relative;
 }
 
@@ -67,9 +67,10 @@ form label {
 form input {
   border: 1px solid var(--text-color);
   border-radius: 5px;
-  padding: 0.5em;
   outline: none;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  padding: 0.8em;
 }
 
 form input:focus,
@@ -81,7 +82,7 @@ form button {
 #backBtn {
   cursor: pointer;
   position: absolute;
-  bottom: -3rem;
+  top: calc(100% + 10px);
   right: 0;
   padding: 0.5em 0.8em;
   border: none;
@@ -99,52 +100,29 @@ form button {
 }
 
 form:last-child {
-  padding-bottom: 2em;
   border-bottom: 1px solid var(--text-color);
-}
-
-
-@media(max-width:456px) {
-  form {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    text-align: left;
-  }
-  main {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  form:last-child {
-    padding-bottom: 0.3em;
-  }
-
-  #nextBtn {
-    bottom: -2rem;
-  }
-
+  padding: 1rem;
 }
 
 @media(max-width:576px) {
-  h1 {
-    font-size: 1.5rem;
+  #appContainer {
+    width: 90%;
   }
 
-  header p {
-    font-size: 0.8rem;
-  }
+  form,
+  #form-two,
+  #form-three {
+    flex-direction: column;
+    gap: 0;
 
-  main {
-    max-width: 90%;
-    padding: 4em 1em;
   }
 
   form:last-child {
-    padding-bottom: 0.5em;
+    border: unset;
   }
 
-  #nextBtn {
-    bottom: -3rem;
+  .review-container {
+    gap: 0;
   }
+
 }
