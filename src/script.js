@@ -26,7 +26,7 @@ export function displayForms(currentForm) {
     }
 }
 
-displayForms(5);
+displayForms(1);
 
 
 
