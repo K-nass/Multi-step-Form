@@ -26,7 +26,7 @@ export default function formStepThree() {
             form.addEventListener('click', (e) => {
                 const selectedValue = e.target.closest('.input-container');
                 if (selectedValue) {
-                    selectedValue.classList.add('selected');                }
+                    selectedValue.classList.add('selected');}
             })
         })
 

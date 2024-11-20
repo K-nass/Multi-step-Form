@@ -1,7 +1,7 @@
 import formStepOne from "./step one/formStepOne.js"
 import formStepTwo from "./step two/formStepTwo.js";
 import formStepThree from "./step three/formStepThree.js";
-import reviewStep from "./review-step/reviewStep.js";
+import reviewStep from "./review step/reviewStep.js";
 import finalStep from "./final step/finalStep.js"
 
 
