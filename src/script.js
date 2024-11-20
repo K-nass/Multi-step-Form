@@ -3,8 +3,13 @@ import formStepTwo from "./step two/formStepTwo.js";
 import formStepThree from "./step three/formStepThree.js";
 import reviewStep from "./review step/reviewStep.js";
 import finalStep from "./final step/finalStep.js"
+import progressIndicator from "./progress indicator/progressIndicator.js";
 
 
+
+
+const progressContainer = document.getElementById('progressContainer')
+progressContainer.innerHTML = progressIndicator()
 
 
 

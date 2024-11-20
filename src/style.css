@@ -20,10 +20,14 @@ body {
   padding-bottom: 2em;
 }
 
-main {
+#appContainer {
   background-color: white;
   border-radius: 10px;
-  padding: 4em 2em;
+}
+
+main {
+  border-radius: 10px;
+  padding: 1.5em 2em 3em;
   width: 500px;
 }
 
@@ -99,6 +103,7 @@ form:last-child {
   border-bottom: 1px solid var(--text-color);
 }
 
+
 @media(max-width:456px) {
   form {
     flex-direction: column;
@@ -132,7 +137,7 @@ form:last-child {
 
   main {
     max-width: 90%;
-    padding: 3em 1em;
+    padding: 4em 1em;
   }
 
   form:last-child {

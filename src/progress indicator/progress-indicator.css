@@ -1,0 +1,46 @@
+#progressContainer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 30px auto;
+    padding: 0 2em;
+    position: relative;
+    width: 100%;
+}
+
+#progressContainer::after {
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    width: 90%;
+    height: 1px;
+    background-color: var(--text-color);
+    left: 5%;
+}
+
+span {
+    width: 30px;
+    height: 30px;
+    background-color: var(--progress-indictor);
+    border-radius: 50%;
+    position: relative;
+    padding: 5px;
+}
+
+span::after {
+    content: "";
+    position: absolute;
+    border-top: 3px solid var(--progress-indictor);
+    width: calc(100% + 50px);
+    top: 50%;
+    left: calc(100% + 10px);
+}
+
+#progressContainer :last-child::after {
+    border: unset;
+}
+
+.active {
+    background-color: var(--secondary);
+    color: white;
+}
