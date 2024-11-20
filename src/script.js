@@ -27,14 +27,3 @@ export function displayForms(currentForm) {
 }
 
 displayForms(1);
-
-
-
-
-//back button function done
-//review page missing two fields => done
-//progress indicator ?
-//responsive ?
-//final Step done
-//focus on selected inputs when clicked done
-//fixing github error
