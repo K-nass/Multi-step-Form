@@ -44,3 +44,18 @@
     background-color: var(--secondary);
     color: white;
 }
+
+
+@media(max-width:576px) {
+    .state::after {
+        width: calc(100% + 30px);
+        left: calc(100% + 5px);
+    }
+}
+
+@media(max-width:450px) {
+    .state::after {
+        width: calc(100% + 10px);
+        left: calc(100% + 1px);
+    }
+}
