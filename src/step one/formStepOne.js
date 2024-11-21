@@ -1,7 +1,7 @@
 import { displayForms } from '../script.js'
 import { incrementForm, getCurrentForm } from '../state/state.js'
 import setLocalStorage from '../../local storage/setLocalStorage.js';
-
+import progressIndicator from '../progress indicator/progressIndicator.js';
 
 export default function formStepOne() {
     setTimeout(() => {
@@ -20,6 +20,7 @@ export default function formStepOne() {
                 setLocalStorage("userDetails", { fullName, emailAddress, phoneNumber, portfolio });
                 incrementForm();
                 displayForms(getCurrentForm());
+                progressIndicator(getCurrentForm())
             });
         }
     }, 0)

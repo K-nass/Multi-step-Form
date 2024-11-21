@@ -1,4 +1,5 @@
 import setLocalStorage from '../../local storage/setLocalStorage.js';
+import progressIndicator from '../progress indicator/progressIndicator.js';
 import { displayForms } from '../script.js'
 import { incrementForm, getCurrentForm } from '../state/state.js'
 import { addEventListenerBackBtn } from '../utils/utils.js';
@@ -12,6 +13,7 @@ export default function formStepTwo() {
                 e.preventDefault();
                 incrementForm();
                 displayForms(getCurrentForm());
+                progressIndicator(getCurrentForm())
             });
         }
         addEventListenerBackBtn('backBtn');

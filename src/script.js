@@ -7,7 +7,7 @@ import progressIndicator from "./progress indicator/progressIndicator.js";
 
 
 
-const progressContainer = document.getElementById('progressContainer')
+export const progressContainer = document.getElementById('progressContainer')
 progressContainer.innerHTML = progressIndicator()
 const main = document.querySelector('main');
 

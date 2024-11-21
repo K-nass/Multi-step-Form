@@ -1,3 +1,4 @@
+import progressIndicator from '../progress indicator/progressIndicator.js';
 import { displayForms } from '../script.js'
 import { getCurrentForm, incrementForm } from '../state/state.js';
 import { addEventListenerBackBtn } from '../utils/utils.js';
@@ -11,6 +12,7 @@ export default function reviewStep() {
                e.preventDefault();
                incrementForm()
                displayForms(getCurrentForm());
+               progressIndicator(getCurrentForm())
             })
         }
         addEventListenerBackBtn('backBtn');
