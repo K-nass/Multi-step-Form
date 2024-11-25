@@ -45,6 +45,10 @@
     color: white;
 }
 
+.active::after {
+    border-color: var(--secondary);
+}
+
 
 @media(max-width:576px) {
     .state::after {
